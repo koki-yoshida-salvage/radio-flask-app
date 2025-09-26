@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 
 from janome.tokenizer import Tokenizer
 
+import os
+
 
 def analyze_keywords():
     contents = []
@@ -110,4 +112,5 @@ def keywords():
 
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
