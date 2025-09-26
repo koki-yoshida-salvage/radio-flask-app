@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>はがきコーナー</title>
+</head>
+<body>
+  <h1>📻 はがきコーナー</h1>
+  <section>
+  <p>今週のテーマ：「{{ theme }}」</p>
+  </section>
+  <p>リスナーの皆さんからの投稿をお待ちしています！</p>
+  <a href="/submit">はがきを送る</a><br>
+  <a href="/messages">みんなのはぴねすを見る</a>
+</body>
+</html>
+
+

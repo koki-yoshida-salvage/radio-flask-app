@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>はがき投稿フォーム</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>📮 はがき投稿フォーム</h2>
+  <p>今週のテーマ：「{{ theme }}」<br>でも自由な投稿も大歓迎です！</p>
+
+  <form method="post">
+    <input type="text" name="name" placeholder="ラジオネーム（匿名OK）"><br><br>
+    <textarea name="content" rows="5" placeholder="はがきの内容を書いてください。テーマに沿ってなくてもOK！"></textarea><br><br>
+    <input type="submit" value="送信する">
+  </form>
+
+  <a href="/">トップページへ戻る</a>
+</body>
+</html>

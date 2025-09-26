@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <title>みんなのはがき</title>
+</head>
+<body>
+  <h2>📖 みんなのはがき</h2>
+  {% if messages %}
+    {% for msg in messages %}
+      <div class="message">
+        <p>🧑 <strong>{{ msg.name }}</strong> さん</p>
+        <p>📝 テーマ：「{{ msg.theme }}」</p>
+        <p>🕒 投稿日時：{{ msg.timestamp }}</p>
+        <p>{{ msg.content }}</p>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>まだ投稿はありません。</p>
+  {% endif %}
+  <a href="/">トップページへ戻る</a>
+</body>
+</html>

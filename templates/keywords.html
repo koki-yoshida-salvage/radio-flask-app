@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>人気ワード分析</title>
+</head>
+<body>
+  <h2>📊 人気ワードランキング</h2>
+  <ul>
+    {% for word, count in keywords %}
+      <li>{{ word }}：{{ count }} 回</li>
+    {% endfor %}
+  </ul>
+  <a href="/">トップページへ戻る</a>
+</body>
+</html>

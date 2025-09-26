@@ -1,0 +1,81 @@
+body {
+  background-color: #fdf6e3; /* やさしい紙色 */
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+body {
+  background-image: url("/static/2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Kosugi Maru', sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+
+h1, h2 {
+  background-color: #ffcc66;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.message {
+  background-color: #fff8e1;
+  border: 1px solid #e0c97f;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+a {
+  display: inline-block;
+  background-color: #ffcc66;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  margin: 5px;
+}
+
+form {
+  background-color: #fff8e1;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e0c97f;
+  max-width: 500px;
+  margin: auto;
+}
+input, textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+p {
+  text-align: center;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
